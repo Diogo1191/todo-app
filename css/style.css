@@ -1,0 +1,138 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #4b6cb7, #182848);}
+
+h1{
+    color: #4b6cb7;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    padding: 30px;
+    border-radius: 20px;
+    width: 600px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.inputContainer{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #4b6cb7;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.labelContainer{
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#labelMiddle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#countTarefa{
+    color: #4b6cb7;
+    position: absolute;
+    right: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+#filtrosContainer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#filtrosContainer button{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    transition: 0.2s;
+}
+
+#filtrosContainer button:hover{
+    transform: scale(1.05);
+}
+
+
+li{
+    background-color: #f1f1f1;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+li span{
+    flex: 1;
+    word-break: break-word;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.deleteButton{
+    background-color: crimson;
+}
+
+.concluidaButton{
+    background-color: green;
+}
+
+.concluida{
+    opacity: 0.6;
+    text-decoration: line-through;
+    transform: scale(1.02);
+}
+
+.visivel{
+    background-color: black;
+    transition: 0.3s;
+    opacity: 0.7;
+}
